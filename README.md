@@ -9,7 +9,27 @@ Name: top-10k-spotify-songs-2025-07 (~10,000 tracks)
 Source: Anna's Archive (Spotify metadata subset)
 
 ---
+##  Proof of Work
 
+**Question:**  
+What patterns exist among the most popular Spotify tracks in terms of release timing, duration, explicit content, and artist collaboration?
+
+**What I Built:**  
+- Cleaned and standardized 10,000 Spotify track records  
+- Engineered features such as duration (seconds), release year, collaboration flags, and popularity buckets  
+- Performed exploratory data analysis to identify trends in music popularity
+
+**Key Insights:**  
+- Most top-ranked tracks fall within a tight duration range (~2–4 minutes)  
+- Collaborations are more common among higher-ranked tracks  
+- Explicit content frequency varies across popularity buckets  
+- Recent years show increased clustering of highly popular releases
+
+**Artifacts:**  
+- Distribution plots for duration and release year  
+- Popularity bucket comparisons
+
+---
 ## Methods
 The following machine learning techniques were applied:
 
@@ -34,7 +54,6 @@ Exploratory analysis was conducted using visualizations to examine:
 - Artist frequency among top-ranked tracks
 
 ---
-
 ## Key Results
 - Most popular tracks cluster between 2–4 minutes in duration, with very few exceeding 10 minutes.
 - The number of highly popular tracks increases sharply after 2015, reflecting the growth of the streaming era.
@@ -43,7 +62,6 @@ Exploratory analysis was conducted using visualizations to examine:
 - A relatively small group of artists accounts for a disproportionately large share of tracks in the Top 10k.
 
 ---
-
 ## Limitations
 - The dataset represents a snapshot in time rather than longitudinal popularity trends.
 - Analysis is limited to metadata and does not include Spotify audio features.
@@ -53,7 +71,6 @@ Exploratory analysis was conducted using visualizations to examine:
 ---
 
 ## Repository Structure
-
 spotify-top-10k-analysis/
 ├── src/
 │   ├── 01_clean.py
@@ -68,7 +85,6 @@ spotify-top-10k-analysis/
 └── README.md
 
 ---
-
 ## How to Run
 1. Install dependencies:
  pip install -r requirements.txt
@@ -80,7 +96,6 @@ spotify-top-10k-analysis/
  python src/02_eda.py
 
 ---
-
 ## Tech Stack
 - Python
 - pandas
@@ -88,7 +103,6 @@ spotify-top-10k-analysis/
 - matplotlib
 
 ---
-
 ## Future Improvements
 
 - Integration of Spotify audio features for deeper musical analysis
